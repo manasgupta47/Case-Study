@@ -22,7 +22,7 @@ export class OrderhistoryService {
   }
   public getOrderHistory(userName:string){
     return this.httpClient.get<FullOrderDetails>(
-      'http://localhost:8084/orderhistorydetails/'+userName
+      'http://localhost:8084/usercarthistory/fullOrder/'+userName
     )
   }
   public getAllOrderHistory(){
